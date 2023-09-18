@@ -1,0 +1,66 @@
+GET http://127.0.0.1:8000/products/info/8
+
+###
+
+GET http://127.0.0.1:8000/products/info
+
+###
+
+POST http://127.0.0.1:8000/partner/update/from_file/
+Authorization: Token aaecc86a3298f9440c50345b375004bf557d9869
+
+###
+
+GET http://127.0.0.1:8000/basket/
+Authorization: Token c9f1e13f98b37a59a91de3cc5721a2ababc25066
+
+###
+
+GET http://127.0.0.1:8000/products/
+
+###
+
+POST http://127.0.0.1:8000/user/details/
+Content-Type: application/json
+# Authorization: Token 
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "password": "",
+    "position": ""
+}
+
+###
+
+GET http://127.0.0.1:8000/user/details/
+Authorization: Token aaecc86a3298f9440c50345b375004bf557d9869
+
+###
+
+POST http://127.0.0.1:8000/user/login/
+Content-Type: application/json
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "password": "",
+    "company": "",
+    "position": ""
+}
+
+###
+
+POST http://127.0.0.1:8000/user/register/
+Content-Type: application/json
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "password": "",
+    "company": "",
+    "position": ""
+}
